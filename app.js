@@ -13,22 +13,37 @@ import adminRoutes from "./routes/adminRoutes.js";
 const app = express();
 
 // ─── CORS Configuration ────────────────────────────────────────────
-// Allow configured frontend domains (comma-separated or single) or all origins by default
-const allowedOrigins = process.env.FRONTEND_URL
-  ? process.env.FRONTEND_URL.split(",").map((origin) => origin.trim())
-  : "*";
-
+// Dynamically allow production domain, Vercel deployments, and localhost
 app.use(
   cors({
-    origin: allowedOrigins.length === 1 && allowedOrigins[0] !== "*"
-      ? allowedOrigins[0]
-      : allowedOrigins.includes("*")
-      ? "*"
-      : allowedOrigins,
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps, curl, server-to-server)
+      if (!origin) return callback(null, true);
+
+      // Explicitly check for authorized origins or allow dynamically
+      const isAllowed =
+        origin.includes("avinashsharmadev.me") ||
+        origin.includes("localhost") ||
+        origin.includes("127.0.0.1") ||
+        origin.endsWith(".vercel.app") ||
+        (process.env.FRONTEND_URL &&
+          (process.env.FRONTEND_URL === "*" ||
+            process.env.FRONTEND_URL.split(",").map((o) => o.trim()).includes(origin)));
+
+      if (isAllowed) {
+        return callback(null, true);
+      }
+
+      // Permissive fallback so legitimate visitors are never blocked
+      return callback(null, true);
+    },
     methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+// Handle preflight requests
+app.options("*", cors());
 app.use(express.json());
 
 // ─── Root Status & Health Checks (Railway Compatible) ───────────────

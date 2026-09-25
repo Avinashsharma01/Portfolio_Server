@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
@@ -11,22 +12,45 @@ import adminRoutes from "./routes/adminRoutes.js";
 
 const app = express();
 
-// ─── Global Middleware ─────────────────────────────────────────────
+// ─── CORS Configuration ────────────────────────────────────────────
+// Allow configured frontend domains (comma-separated or single) or all origins by default
+const allowedOrigins = process.env.FRONTEND_URL
+  ? process.env.FRONTEND_URL.split(",").map((origin) => origin.trim())
+  : "*";
+
 app.use(
   cors({
-    origin: "*",
+    origin: allowedOrigins.length === 1 && allowedOrigins[0] !== "*"
+      ? allowedOrigins[0]
+      : allowedOrigins.includes("*")
+      ? "*"
+      : allowedOrigins,
     methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json());
 
-// ─── Health Check ──────────────────────────────────────────────────
-app.get("/api/health", (req, res) => {
+// ─── Root Status & Health Checks (Railway Compatible) ───────────────
+app.get("/", (req, res) => {
   res.json({
     status: "ok",
-    message: "Razorpay backend server running cleanly!",
-    mongoStatus: mongoose.connection.readyState === 1 ? "connected" : "disconnected",
+    service: "Portfolio & Course Backend API",
+    version: "1.0.0",
+    uptime: `${Math.floor(process.uptime())}s`,
+    database: mongoose.connection.readyState === 1 ? "connected" : "disconnected",
+    healthCheck: "/api/health",
+    timestamp: new Date().toISOString(),
+  });
+});
+
+app.get(["/health", "/api/health"], (req, res) => {
+  const isDbConnected = mongoose.connection.readyState === 1;
+  res.json({
+    status: "ok",
+    message: "Razorpay & Portfolio backend server running cleanly!",
+    mongoStatus: isDbConnected ? "connected" : "disconnected",
+    timestamp: new Date().toISOString(),
   });
 });
 

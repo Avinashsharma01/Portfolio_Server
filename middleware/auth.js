@@ -1,12 +1,15 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
-export const JWT_SECRET = process.env.JWT_SECRET || "super_secret_jwt_key_ecommerce_blueprint_2026_secure!";
+export const getJwtSecret = () =>
+  process.env.JWT_SECRET || "super_secret_jwt_key_ecommerce_blueprint_2026_secure!";
+
+export const JWT_SECRET = getJwtSecret();
 
 export const generateToken = (user) => {
   return jwt.sign(
     { id: user._id, email: user.email, name: user.name },
-    JWT_SECRET,
+    getJwtSecret(),
     { expiresIn: "30d" }
   );
 };
@@ -21,7 +24,7 @@ export const authenticateToken = async (req, res, next) => {
       return res.status(401).json({ success: false, message: "Authentication required. Please log in." });
     }
 
-    const decoded = jwt.verify(token, JWT_SECRET);
+    const decoded = jwt.verify(token, getJwtSecret());
     const user = await User.findById(decoded.id);
     if (!user) {
       return res.status(401).json({ success: false, message: "User account not found." });
@@ -43,7 +46,7 @@ export const optionalAuth = async (req, res, next) => {
       : (req.body?.token || null);
 
     if (token) {
-      const decoded = jwt.verify(token, JWT_SECRET);
+      const decoded = jwt.verify(token, getJwtSecret());
       const user = await User.findById(decoded.id);
       if (user) req.user = user;
     }

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Avinash Test",
+    "email": "test@example.com",
+    "subject": "Collab Inquiry",
+    "message": "Hello, I want to discuss a new project!",
+    "ip": "::1",
+    "userAgent": "curl/8.18.0",
+    "createdAt": "2026-09-25T07:33:28.099Z",
+    "_id": "6ab623c8e03f5f4047e21728"
+  },
+  {
+    "name": "Avinash Sharma",
+    "email": "avinashsharma31384@gmail.com",
+    "subject": "Android",
+    "message": "Hello World",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "createdAt": "2026-09-25T07:35:30.442Z",
+    "_id": "6ab62442e03f5f4047e21729"
+  },
+  {
+    "name": "Avinash Sharma",
+    "email": "avinashsharma31384@gmail.com",
+    "subject": "Portfolio Collaboration",
+    "message": "I love the blueprints and would like to collaborate on an architecture series.",
+    "ip": "::1",
+    "userAgent": "curl/8.18.0",
+    "createdAt": "2026-09-25T07:35:48.405Z",
+    "_id": "6ab62454e03f5f4047e2172a"
+  }
+]

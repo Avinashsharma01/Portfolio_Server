@@ -1,0 +1,717 @@
+{
+  "CSS": [
+    {
+      "id": "01-CSS-Basics",
+      "fileName": "01-CSS-Basics.md",
+      "title": "Phase 1: CSS Basics"
+    },
+    {
+      "id": "02-Box-Model-Layout",
+      "fileName": "02-Box-Model-Layout.md",
+      "title": "Phase 2: Box Model & Layout Basics"
+    },
+    {
+      "id": "03-Modern-Layout",
+      "fileName": "03-Modern-Layout.md",
+      "title": "Phase 3: Modern Layout Systems"
+    },
+    {
+      "id": "04-Advanced-Styling",
+      "fileName": "04-Advanced-Styling.md",
+      "title": "Phase 4: Advanced Styling"
+    },
+    {
+      "id": "05-CSS-Architecture",
+      "fileName": "05-CSS-Architecture.md",
+      "title": "Phase 5: CSS Architecture & Best Practices"
+    },
+    {
+      "id": "06-Modern-CSS",
+      "fileName": "06-Modern-CSS.md",
+      "title": "Phase 6: Modern CSS Features"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "CSS Learning Documentation"
+    }
+  ],
+  "HTML": [
+    {
+      "id": "01-HTML-Basics",
+      "fileName": "01-HTML-Basics.md",
+      "title": "Phase 1: HTML Fundamentals"
+    },
+    {
+      "id": "02-Text-Content",
+      "fileName": "02-Text-Content.md",
+      "title": "Phase 2: Text and Content Elements"
+    },
+    {
+      "id": "03-Links-Media",
+      "fileName": "03-Links-Media.md",
+      "title": "Phase 3: Links and Media"
+    },
+    {
+      "id": "04-Tables-Forms",
+      "fileName": "04-Tables-Forms.md",
+      "title": "Phase 4: Tables and Forms"
+    },
+    {
+      "id": "05-Semantic-HTML",
+      "fileName": "05-Semantic-HTML.md",
+      "title": "Phase 5: Semantic HTML"
+    },
+    {
+      "id": "06-Advanced-HTML",
+      "fileName": "06-Advanced-HTML.md",
+      "title": "Phase 6: Advanced HTML"
+    },
+    {
+      "id": "07-Best-Practices",
+      "fileName": "07-Best-Practices.md",
+      "title": "Phase 7: Best Practices and Performance"
+    },
+    {
+      "id": "PROGRESS",
+      "fileName": "PROGRESS.md",
+      "title": "HTML Learning Progress Tracker"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "HTML Learning Documentation Series"
+    }
+  ],
+  "JavaScript": [
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART1",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART1.md",
+      "title": "JavaScript Comprehensive Guide - Part 1: Foundation & Core Concepts"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART2",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART2.md",
+      "title": "JavaScript Comprehensive Guide - Part 2: Asynchronous JavaScript"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART3",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART3.md",
+      "title": "JavaScript Comprehensive Guide - Part 3: DOM & BOM Mastery"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART4",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART4.md",
+      "title": "JavaScript Comprehensive Guide - Part 4: Forms & BOM"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART5",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART5.md",
+      "title": "JavaScript Comprehensive Guide - Part 5: Advanced DOM & Performance"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART6",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART6.md",
+      "title": "JavaScript Comprehensive Guide - Part 6: Modern APIs & Best Practices"
+    },
+    {
+      "id": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART7_Web_Api",
+      "fileName": "JAVASCRIPT_COMPREHENSIVE_GUIDE_PART7_Web_Api.md",
+      "title": "🌐 JAVASCRIPT WEB APIs - COMPREHENSIVE GUIDE"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/01-Parsing-Compilation-Execution",
+      "fileName": "JS_Engine_Deep_Dive/01-Parsing-Compilation-Execution.md",
+      "title": "Chapter 01: Parsing, Compilation & Execution"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/02-Execution-Context-Call-Stack",
+      "fileName": "JS_Engine_Deep_Dive/02-Execution-Context-Call-Stack.md",
+      "title": "Chapter 02: Execution Context & Call Stack"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/03-Memory-Allocation-Garbage-Collection",
+      "fileName": "JS_Engine_Deep_Dive/03-Memory-Allocation-Garbage-Collection.md",
+      "title": "Chapter 03: Memory Allocation & Garbage Collection"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/04-Undefined-vs-Null-Internals",
+      "fileName": "JS_Engine_Deep_Dive/04-Undefined-vs-Null-Internals.md",
+      "title": "Chapter 04: undefined vs null Internals"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/05-Synchronous-vs-Asynchronous",
+      "fileName": "JS_Engine_Deep_Dive/05-Synchronous-vs-Asynchronous.md",
+      "title": "Chapter 05: Synchronous vs Asynchronous Execution"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/06-Event-Loop-Internals",
+      "fileName": "JS_Engine_Deep_Dive/06-Event-Loop-Internals.md",
+      "title": "Chapter 06: Event Loop Internals"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/07-Macro-Tasks-vs-Micro-Tasks",
+      "fileName": "JS_Engine_Deep_Dive/07-Macro-Tasks-vs-Micro-Tasks.md",
+      "title": "Chapter 07: Macro Tasks vs Micro Tasks"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/08-Promises-Lifecycle",
+      "fileName": "JS_Engine_Deep_Dive/08-Promises-Lifecycle.md",
+      "title": "Chapter 08: Promises Lifecycle"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/09-Web-APIs-Browser-Interaction",
+      "fileName": "JS_Engine_Deep_Dive/09-Web-APIs-Browser-Interaction.md",
+      "title": "Chapter 09: Web APIs & Browser Interaction"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/10-Async-Await-Deep-Dive",
+      "fileName": "JS_Engine_Deep_Dive/10-Async-Await-Deep-Dive.md",
+      "title": "Chapter 10: async/await Deep Dive"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/11-Everything-Connected",
+      "fileName": "JS_Engine_Deep_Dive/11-Everything-Connected.md",
+      "title": "Chapter 11: Everything Connected - The Complete JavaScript Runtime Mental Model"
+    },
+    {
+      "id": "JS_Engine_Deep_Dive/README",
+      "fileName": "JS_Engine_Deep_Dive/README.md",
+      "title": "🚀 JavaScript Engine Deep Dive"
+    },
+    {
+      "id": "Logic/javascript-logic-guide-phase2",
+      "fileName": "Logic/javascript-logic-guide-phase2.md",
+      "title": "JavaScript Logic Guide - Phase 2"
+    },
+    {
+      "id": "Logic/javascript-logic-guide-phase3",
+      "fileName": "Logic/javascript-logic-guide-phase3.md",
+      "title": "JavaScript Logic Guide - Phase 3"
+    },
+    {
+      "id": "Logic/javascript-logic-guide-phase4",
+      "fileName": "Logic/javascript-logic-guide-phase4.md",
+      "title": "JavaScript Logic Guide - Phase 4 (Final)"
+    },
+    {
+      "id": "Logic/javascript-logic-guide",
+      "fileName": "Logic/javascript-logic-guide.md",
+      "title": "JavaScript Logic - Complete Interview & Development Guide"
+    }
+  ],
+  "MongoDB": [
+    {
+      "id": "Aggregation",
+      "fileName": "Aggregation.md",
+      "title": "MongoDB Aggregation Pipeline - Complete Guide"
+    },
+    {
+      "id": "Phase_1_Foundation/01-MongoDB-Basics",
+      "fileName": "Phase_1_Foundation/01-MongoDB-Basics.md",
+      "title": "Phase 1: MongoDB Basics"
+    },
+    {
+      "id": "Phase_1_Foundation/02-Installation-Setup",
+      "fileName": "Phase_1_Foundation/02-Installation-Setup.md",
+      "title": "Phase 1: Installation and Setup"
+    },
+    {
+      "id": "Phase_2_Core_Concepts/03-Database-Collections",
+      "fileName": "Phase_2_Core_Concepts/03-Database-Collections.md",
+      "title": "Phase 2: Databases and Collections"
+    },
+    {
+      "id": "Phase_2_Core_Concepts/04-CRUD-Operations",
+      "fileName": "Phase_2_Core_Concepts/04-CRUD-Operations.md",
+      "title": "Phase 2: CRUD Operations"
+    },
+    {
+      "id": "Phase_3_Mongoose_Introduction/05-Mongoose-Basics",
+      "fileName": "Phase_3_Mongoose_Introduction/05-Mongoose-Basics.md",
+      "title": "Phase 3: Mongoose Basics"
+    },
+    {
+      "id": "Phase_3_Mongoose_Introduction/06-Schema-Models",
+      "fileName": "Phase_3_Mongoose_Introduction/06-Schema-Models.md",
+      "title": "Phase 3: Schema and Models"
+    },
+    {
+      "id": "Phase_4_Advanced_Operations/07-Queries-Filtering",
+      "fileName": "Phase_4_Advanced_Operations/07-Queries-Filtering.md",
+      "title": "Phase 4: Advanced Queries and Filtering"
+    },
+    {
+      "id": "Phase_4_Advanced_Operations/08-Relationships",
+      "fileName": "Phase_4_Advanced_Operations/08-Relationships.md",
+      "title": "Phase 4: Document Relationships"
+    },
+    {
+      "id": "Phase_5_Production_Ready/09-Validation-Middleware",
+      "fileName": "Phase_5_Production_Ready/09-Validation-Middleware.md",
+      "title": "Phase 5: Validation and Middleware"
+    },
+    {
+      "id": "Phase_5_Production_Ready/10-Performance-Optimization",
+      "fileName": "Phase_5_Production_Ready/10-Performance-Optimization.md",
+      "title": "Phase 5: Performance Optimization"
+    },
+    {
+      "id": "Phase_6_Advanced_Topics/11-Security-Best-Practices",
+      "fileName": "Phase_6_Advanced_Topics/11-Security-Best-Practices.md",
+      "title": "Phase 5: Security Best Practices"
+    },
+    {
+      "id": "Phase_6_Advanced_Topics/12-Production-Deployment",
+      "fileName": "Phase_6_Advanced_Topics/12-Production-Deployment.md",
+      "title": "Phase 5: Production Deployment"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "MongoDB and Mongoose Documentation Series"
+    }
+  ],
+  "SQL": [
+    {
+      "id": "00-README",
+      "fileName": "00-README.md",
+      "title": "SQL & DBMS Complete Learning Guide"
+    },
+    {
+      "id": "Phase-1/01-introduction-to-databases",
+      "fileName": "Phase-1/01-introduction-to-databases.md",
+      "title": "Introduction to Databases"
+    },
+    {
+      "id": "Phase-1/02-dbms-fundamentals",
+      "fileName": "Phase-1/02-dbms-fundamentals.md",
+      "title": "Database Management Systems (DBMS) Fundamentals"
+    },
+    {
+      "id": "Phase-1/03-relational-model",
+      "fileName": "Phase-1/03-relational-model.md",
+      "title": "The Relational Model"
+    },
+    {
+      "id": "Phase-1/04-sql-introduction",
+      "fileName": "Phase-1/04-sql-introduction.md",
+      "title": "Introduction to SQL"
+    },
+    {
+      "id": "Phase-2/05-database-and-tables",
+      "fileName": "Phase-2/05-database-and-tables.md",
+      "title": "Creating Databases and Tables"
+    },
+    {
+      "id": "Phase-2/06-data-types",
+      "fileName": "Phase-2/06-data-types.md",
+      "title": "SQL Data Types and Constraints"
+    },
+    {
+      "id": "Phase-2/07-basic-queries",
+      "fileName": "Phase-2/07-basic-queries.md",
+      "title": "Basic SQL Queries - CRUD Operations"
+    },
+    {
+      "id": "Phase-2/08-filtering-and-sorting",
+      "fileName": "Phase-2/08-filtering-and-sorting.md",
+      "title": "Filtering and Sorting Data"
+    },
+    {
+      "id": "Phase-3/09-joins",
+      "fileName": "Phase-3/09-joins.md",
+      "title": "SQL JOINs - Combining Data from Multiple Tables"
+    },
+    {
+      "id": "Phase-3/10-functions-and-operators",
+      "fileName": "Phase-3/10-functions-and-operators.md",
+      "title": "SQL Functions and Operators"
+    },
+    {
+      "id": "Phase-3/11-grouping-and-aggregation",
+      "fileName": "Phase-3/11-grouping-and-aggregation.md",
+      "title": "Grouping and Aggregation"
+    },
+    {
+      "id": "Phase-3/12-subqueries",
+      "fileName": "Phase-3/12-subqueries.md",
+      "title": "Subqueries - Queries Within Queries"
+    },
+    {
+      "id": "Phase-4/13-advanced-joins",
+      "fileName": "Phase-4/13-advanced-joins.md",
+      "title": "Advanced JOINs and Complex Scenarios"
+    },
+    {
+      "id": "Phase-4/14-window-functions",
+      "fileName": "Phase-4/14-window-functions.md",
+      "title": "Window Functions and Analytical Queries"
+    },
+    {
+      "id": "Phase-4/15-stored-procedures-functions",
+      "fileName": "Phase-4/15-stored-procedures-functions.md",
+      "title": "Stored Procedures and Functions"
+    },
+    {
+      "id": "Phase-4/16-triggers-views-advanced-objects",
+      "fileName": "Phase-4/16-triggers-views-advanced-objects.md",
+      "title": "Triggers, Views, and Advanced Database Objects"
+    },
+    {
+      "id": "Phase-5/17-performance-optimization",
+      "fileName": "Phase-5/17-performance-optimization.md",
+      "title": "Database Performance Optimization and Tuning"
+    },
+    {
+      "id": "Phase-5/18-database-security",
+      "fileName": "Phase-5/18-database-security.md",
+      "title": "Database Security and User Management"
+    },
+    {
+      "id": "Phase-5/19-database-administration",
+      "fileName": "Phase-5/19-database-administration.md",
+      "title": "Database Administration and Maintenance"
+    },
+    {
+      "id": "Phase-5/19a-backup-recovery",
+      "fileName": "Phase-5/19a-backup-recovery.md",
+      "title": "Database Backup and Recovery Strategies"
+    },
+    {
+      "id": "Phase-5/19b-monitoring-alerting",
+      "fileName": "Phase-5/19b-monitoring-alerting.md",
+      "title": "Database Monitoring and Alerting"
+    },
+    {
+      "id": "Phase-5/19c-maintenance-optimization",
+      "fileName": "Phase-5/19c-maintenance-optimization.md",
+      "title": "Database Maintenance and Optimization"
+    },
+    {
+      "id": "Phase-5/19d-capacity-planning",
+      "fileName": "Phase-5/19d-capacity-planning.md",
+      "title": "Database Capacity Planning and Scaling"
+    }
+  ],
+  "System_Design": [
+    {
+      "id": "Phase-01-What-Is-System-Design",
+      "fileName": "Phase-01-What-Is-System-Design.md",
+      "title": "Phase 01 — What Is System Design & Why It Matters"
+    },
+    {
+      "id": "Phase-02-Networks-Protocols-Client-Server",
+      "fileName": "Phase-02-Networks-Protocols-Client-Server.md",
+      "title": "Phase 02 — Networks, Protocols & Client-Server Architecture"
+    },
+    {
+      "id": "Phase-03-Scaling-Fundamentals",
+      "fileName": "Phase-03-Scaling-Fundamentals.md",
+      "title": "Phase 03 — Horizontal vs Vertical Scaling"
+    },
+    {
+      "id": "Phase-04-Load-Balancing",
+      "fileName": "Phase-04-Load-Balancing.md",
+      "title": "Phase 04 — Load Balancing"
+    },
+    {
+      "id": "Phase-05-Caching-Strategies",
+      "fileName": "Phase-05-Caching-Strategies.md",
+      "title": "Phase 05 — Caching — Strategies, Eviction & Invalidation"
+    },
+    {
+      "id": "Phase-06-Database-Fundamentals",
+      "fileName": "Phase-06-Database-Fundamentals.md",
+      "title": "Phase 06 — Database Fundamentals — SQL vs NoSQL"
+    },
+    {
+      "id": "Phase-07-Database-Scaling",
+      "fileName": "Phase-07-Database-Scaling.md",
+      "title": "Phase 07 — Database Scaling — Sharding, Replication & Partitioning"
+    },
+    {
+      "id": "Phase-08-API-Design",
+      "fileName": "Phase-08-API-Design.md",
+      "title": "Phase 08 — API Design — REST, GraphQL & gRPC"
+    },
+    {
+      "id": "Phase-09-Message-Queues",
+      "fileName": "Phase-09-Message-Queues.md",
+      "title": "Phase 09 — Message Queues & Asynchronous Processing"
+    },
+    {
+      "id": "Phase-10-CAP-Theorem-Consistency",
+      "fileName": "Phase-10-CAP-Theorem-Consistency.md",
+      "title": "Phase 10 — CAP Theorem & Consistency Models"
+    },
+    {
+      "id": "Phase-11-Distributed-Systems-Fundamentals",
+      "fileName": "Phase-11-Distributed-Systems-Fundamentals.md",
+      "title": "Phase 11 — Distributed Systems Fundamentals"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "System Design Complete Guide — From Fundamentals to Real-World Architectures"
+    }
+  ],
+  "Tailwind": [
+    {
+      "id": "Phase-1-Getting-Started",
+      "fileName": "Phase-1-Getting-Started.md",
+      "title": "Tailwind CSS Complete Guide - Phase 1: Getting Started"
+    },
+    {
+      "id": "Phase-2-Core-Concepts-Layout",
+      "fileName": "Phase-2-Core-Concepts-Layout.md",
+      "title": "Tailwind CSS Complete Guide - Phase 2: Core Concepts & Layout"
+    },
+    {
+      "id": "Phase-3-Styling-Components",
+      "fileName": "Phase-3-Styling-Components.md",
+      "title": "Tailwind CSS Complete Guide - Phase 3: Styling Components"
+    },
+    {
+      "id": "Phase-4-Responsive-Design-Utilities",
+      "fileName": "Phase-4-Responsive-Design-Utilities.md",
+      "title": "Tailwind CSS Complete Guide - Phase 4: Responsive Design & Utilities"
+    },
+    {
+      "id": "Phase-5-Advanced-Features-Customization",
+      "fileName": "Phase-5-Advanced-Features-Customization.md",
+      "title": "Tailwind CSS Complete Guide - Phase 5: Advanced Features & Customization"
+    }
+  ],
+  "backend": [
+    {
+      "id": "Phase-01-How-The-Internet-Works",
+      "fileName": "Phase-01-How-The-Internet-Works.md",
+      "title": "Phase 01 — How The Internet Works"
+    },
+    {
+      "id": "Phase-02-NodeJS-Fundamentals",
+      "fileName": "Phase-02-NodeJS-Fundamentals.md",
+      "title": "Phase 02 — Node.js Fundamentals"
+    },
+    {
+      "id": "Phase-03-ExpressJS-Fundamentals",
+      "fileName": "Phase-03-ExpressJS-Fundamentals.md",
+      "title": "Phase 03 — Express.js Fundamentals"
+    },
+    {
+      "id": "Phase-04-HTTP-Deep-Dive",
+      "fileName": "Phase-04-HTTP-Deep-Dive.md",
+      "title": "Phase 04 — HTTP Deep Dive: Methods, Headers, Status Codes"
+    },
+    {
+      "id": "Phase-05-Middleware-In-Depth",
+      "fileName": "Phase-05-Middleware-In-Depth.md",
+      "title": "Phase 05 — Middleware In Depth"
+    },
+    {
+      "id": "Phase-06-Routing-Advanced",
+      "fileName": "Phase-06-Routing-Advanced.md",
+      "title": "Phase 06 — Routing Advanced Patterns"
+    },
+    {
+      "id": "Phase-07-Request-Response-Cycle",
+      "fileName": "Phase-07-Request-Response-Cycle.md",
+      "title": "Phase 07 — Request-Response Cycle Deep Dive"
+    },
+    {
+      "id": "Phase-08-REST-API-Design",
+      "fileName": "Phase-08-REST-API-Design.md",
+      "title": "Phase 08 — REST API Design & Best Practices"
+    },
+    {
+      "id": "Phase-09-Database-Fundamentals",
+      "fileName": "Phase-09-Database-Fundamentals.md",
+      "title": "Phase 09 — Database Fundamentals"
+    },
+    {
+      "id": "Phase-10-Authentication-Authorization",
+      "fileName": "Phase-10-Authentication-Authorization.md",
+      "title": "Phase 10 — Authentication & Authorization"
+    },
+    {
+      "id": "Phase-11-Error-Handling-Logging",
+      "fileName": "Phase-11-Error-Handling-Logging.md",
+      "title": "Phase 11 — Error Handling & Logging"
+    },
+    {
+      "id": "Phase-12-File-Uploads-Streams",
+      "fileName": "Phase-12-File-Uploads-Streams.md",
+      "title": "Phase 12 — File Uploads & Streams"
+    },
+    {
+      "id": "Phase-13-Security-Best-Practices",
+      "fileName": "Phase-13-Security-Best-Practices.md",
+      "title": "Phase 13 — Security Best Practices"
+    },
+    {
+      "id": "Phase-14-Testing-Backend",
+      "fileName": "Phase-14-Testing-Backend.md",
+      "title": "Phase 14 — Testing Backend"
+    },
+    {
+      "id": "Phase-15-Caching-Performance",
+      "fileName": "Phase-15-Caching-Performance.md",
+      "title": "Phase 15 — Caching & Performance"
+    },
+    {
+      "id": "Phase-16-WebSockets-Realtime",
+      "fileName": "Phase-16-WebSockets-Realtime.md",
+      "title": "Phase 16 — WebSockets & Real-Time Communication"
+    },
+    {
+      "id": "Phase-17-Task-Queues-Background-Jobs",
+      "fileName": "Phase-17-Task-Queues-Background-Jobs.md",
+      "title": "Phase 17 — Task Queues & Background Jobs"
+    },
+    {
+      "id": "Phase-18-Microservices-Architecture",
+      "fileName": "Phase-18-Microservices-Architecture.md",
+      "title": "Phase 18 — Microservices Architecture"
+    },
+    {
+      "id": "Phase-19-Deployment-DevOps",
+      "fileName": "Phase-19-Deployment-DevOps.md",
+      "title": "Phase 19 — Deployment & DevOps"
+    },
+    {
+      "id": "Phase-20-Scaling-Advanced-Patterns",
+      "fileName": "Phase-20-Scaling-Advanced-Patterns.md",
+      "title": "Phase 20 — Scaling & Advanced Patterns"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "Backend Development Complete Guide — Node.js + Express.js"
+    }
+  ],
+  "frontend": [
+    {
+      "id": "Phase-01-How-The-Browser-Works",
+      "fileName": "Phase-01-How-The-Browser-Works.md",
+      "title": "Phase 01 — How The Browser Works"
+    },
+    {
+      "id": "Phase-02-HTML-Fundamentals",
+      "fileName": "Phase-02-HTML-Fundamentals.md",
+      "title": "Phase 02 — HTML Fundamentals"
+    },
+    {
+      "id": "Phase-03-CSS-Fundamentals",
+      "fileName": "Phase-03-CSS-Fundamentals.md",
+      "title": "Phase 03 — CSS Fundamentals"
+    },
+    {
+      "id": "Phase-04-JavaScript-And-The-DOM",
+      "fileName": "Phase-04-JavaScript-And-The-DOM.md",
+      "title": "Phase 04 — JavaScript & The DOM"
+    },
+    {
+      "id": "Phase-05-Responsive-Design-Layouts",
+      "fileName": "Phase-05-Responsive-Design-Layouts.md",
+      "title": "Phase 05 — Responsive Design & Layouts"
+    },
+    {
+      "id": "Phase-06-CSS-Architecture-Modern-CSS",
+      "fileName": "Phase-06-CSS-Architecture-Modern-CSS.md",
+      "title": "Phase 06 — CSS Architecture & Modern CSS"
+    },
+    {
+      "id": "Phase-07-JavaScript-ES6-Deep-Dive",
+      "fileName": "Phase-07-JavaScript-ES6-Deep-Dive.md",
+      "title": "Phase 07 — JavaScript ES6+ Deep Dive"
+    },
+    {
+      "id": "Phase-08-Browser-APIs-Web-Storage",
+      "fileName": "Phase-08-Browser-APIs-Web-Storage.md",
+      "title": "Phase 08 — Browser APIs & Web Storage"
+    },
+    {
+      "id": "Phase-09-Build-Tools-Module-Bundlers",
+      "fileName": "Phase-09-Build-Tools-Module-Bundlers.md",
+      "title": "Phase 09 — Build Tools & Module Bundlers"
+    },
+    {
+      "id": "Phase-10-React-Fundamentals",
+      "fileName": "Phase-10-React-Fundamentals.md",
+      "title": "Phase 10 — React Fundamentals"
+    },
+    {
+      "id": "Phase-11-React-State-Hooks",
+      "fileName": "Phase-11-React-State-Hooks.md",
+      "title": "Phase 11 — React State Management & Hooks"
+    },
+    {
+      "id": "Phase-12-React-Router-Navigation",
+      "fileName": "Phase-12-React-Router-Navigation.md",
+      "title": "Phase 12 — React Router & Navigation"
+    },
+    {
+      "id": "Phase-13-Fetching-Data-API-Integration",
+      "fileName": "Phase-13-Fetching-Data-API-Integration.md",
+      "title": "Phase 13 — Fetching Data & API Integration"
+    },
+    {
+      "id": "Phase-14-Forms-Validation-User-Input",
+      "fileName": "Phase-14-Forms-Validation-User-Input.md",
+      "title": "Phase 14 — Forms, Validation & User Input"
+    },
+    {
+      "id": "Phase-15-Testing-Frontend",
+      "fileName": "Phase-15-Testing-Frontend.md",
+      "title": "Phase 15 — Testing Frontend Applications"
+    },
+    {
+      "id": "Phase-16-Performance-Optimization",
+      "fileName": "Phase-16-Performance-Optimization.md",
+      "title": "Phase 16 — Performance Optimization"
+    },
+    {
+      "id": "Phase-17-Accessibility",
+      "fileName": "Phase-17-Accessibility.md",
+      "title": "Phase 17 — Accessibility (a11y)"
+    },
+    {
+      "id": "Phase-18-TypeScript-Frontend",
+      "fileName": "Phase-18-TypeScript-Frontend.md",
+      "title": "Phase 18 — TypeScript for Frontend"
+    },
+    {
+      "id": "Phase-19-Advanced-Patterns-Architecture",
+      "fileName": "Phase-19-Advanced-Patterns-Architecture.md",
+      "title": "Phase 19 — Advanced Patterns & Architecture"
+    },
+    {
+      "id": "Phase-20-Deployment-CICD",
+      "fileName": "Phase-20-Deployment-CICD.md",
+      "title": "Phase 20 — Deployment & CI/CD for Frontend"
+    },
+    {
+      "id": "README",
+      "fileName": "README.md",
+      "title": "Frontend Development Complete Guide — HTML, CSS, JavaScript & React"
+    }
+  ],
+  "typeScript": [
+    {
+      "id": "ADVANCED_TYPESCRIPT_PATTERNS",
+      "fileName": "ADVANCED_TYPESCRIPT_PATTERNS.md",
+      "title": "Advanced TypeScript Patterns for Backend Development"
+    },
+    {
+      "id": "TYPESCRIPT_BACKEND_GUIDE",
+      "fileName": "TYPESCRIPT_BACKEND_GUIDE.md",
+      "title": "TypeScript for Backend Development - Complete Guide"
+    },
+    {
+      "id": "TYPESCRIPT_BEST_PRACTICES",
+      "fileName": "TYPESCRIPT_BEST_PRACTICES.md",
+      "title": "TypeScript Best Practices & Troubleshooting Guide"
+    }
+  ]
+}

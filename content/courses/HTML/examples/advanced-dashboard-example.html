@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Advanced HTML Example - Interactive Dashboard</title>
+        <meta
+            name="description"
+            content="Advanced HTML5 example showcasing modern features and best practices"
+        />
+
+        <!-- SEO and Social Media -->
+        <meta property="og:title" content="Advanced HTML5 Dashboard" />
+        <meta
+            property="og:description"
+            content="Interactive dashboard demonstrating HTML5 APIs and modern web standards"
+        />
+
+        <!-- Performance optimizations -->
+        <link
+            rel="preload"
+            href="main-font.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+
+        <style>
+            /* Critical CSS for above-the-fold content */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, sans-serif;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 1rem;
+            }
+            .dashboard-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1rem;
+                margin: 2rem 0;
+            }
+            .card {
+                background: #f8f9fa;
+                border-radius: 8px;
+                padding: 1.5rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .progress-bar {
+                width: 100%;
+                height: 20px;
+                background: #e9ecef;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #007bff, #0056b3);
+                transition: width 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Skip navigation for accessibility -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Header with semantic navigation -->
+        <header role="banner">
+            <div class="container">
+                <h1>Advanced HTML5 Dashboard</h1>
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li>
+                            <a href="#dashboard" aria-current="page"
+                                >Dashboard</a
+                            >
+                        </li>
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main content area -->
+        <main id="main-content" role="main">
+            <div class="container">
+                <section id="dashboard" aria-labelledby="dashboard-heading">
+                    <h2 id="dashboard-heading">Performance Dashboard</h2>
+
+                    <div class="dashboard-grid">
+                        <!-- Progress and Meter examples -->
+                        <article class="card">
+                            <header>
+                                <h3>Project Progress</h3>
+                            </header>
+                            <div>
+                                <p>Current project completion:</p>
+                                <progress
+                                    value="75"
+                                    max="100"
+                                    aria-label="Project 75% complete"
+                                >
+                                    75%
+                                </progress>
+                                <p>75% Complete</p>
+
+                                <p>Server performance:</p>
+                                <meter
+                                    value="8.5"
+                                    min="0"
+                                    max="10"
+                                    optimum="9"
+                                    aria-label="Server performance 8.5 out of 10"
+                                >
+                                    8.5/10
+                                </meter>
+                                <p>Excellent</p>
+                            </div>
+                        </article>
+
+                        <!-- Interactive forms with modern input types -->
+                        <article class="card">
+                            <header>
+                                <h3>Quick Settings</h3>
+                            </header>
+                            <form>
+                                <fieldset>
+                                    <legend>Appearance Settings</legend>
+
+                                    <label for="theme-color"
+                                        >Theme Color:</label
+                                    >
+                                    <input
+                                        type="color"
+                                        id="theme-color"
+                                        name="theme"
+                                        value="#007bff"
+                                    />
+
+                                    <label for="font-size">Font Size:</label>
+                                    <input
+                                        type="range"
+                                        id="font-size"
+                                        name="fontSize"
+                                        min="12"
+                                        max="24"
+                                        value="16"
+                                    />
+                                    <output for="font-size">16px</output>
+
+                                    <label for="notifications"
+                                        >Enable Notifications:</label
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        id="notifications"
+                                        name="notifications"
+                                        checked
+                                    />
+                                </fieldset>
+                            </form>
+                        </article>
+
+                        <!-- Data visualization with canvas -->
+                        <article class="card">
+                            <header>
+                                <h3>Live Chart</h3>
+                            </header>
+                            <canvas
+                                id="chart-canvas"
+                                width="300"
+                                height="200"
+                                aria-label="Sales data chart showing monthly trends"
+                            >
+                                <!-- Fallback content for non-canvas browsers -->
+                                <p>
+                                    Sales have increased 25% this quarter, with
+                                    strongest growth in mobile category.
+                                </p>
+                            </canvas>
+                        </article>
+
+                        <!-- Details/Summary for collapsible content -->
+                        <article class="card">
+                            <header>
+                                <h3>System Information</h3>
+                            </header>
+                            <details>
+                                <summary>CPU Usage</summary>
+                                <p>Current: 45%</p>
+                                <p>Average: 52%</p>
+                                <p>Peak: 78%</p>
+                            </details>
+
+                            <details>
+                                <summary>Memory Usage</summary>
+                                <p>Used: 8.2 GB</p>
+                                <p>Available: 7.8 GB</p>
+                                <p>Total: 16 GB</p>
+                            </details>
+
+                            <details>
+                                <summary>Network Status</summary>
+                                <p>Status: Connected</p>
+                                <p>Speed: 1 Gbps</p>
+                                <p>Latency: 12ms</p>
+                            </details>
+                        </article>
+
+                        <!-- Date and time elements -->
+                        <article class="card">
+                            <header>
+                                <h3>Recent Activity</h3>
+                            </header>
+                            <ul>
+                                <li>
+                                    User login at
+                                    <time datetime="2024-01-15T09:30:00"
+                                        >9:30 AM today</time
+                                    >
+                                </li>
+                                <li>
+                                    Report generated
+                                    <time
+                                        datetime="2024-01-15T08:45:00"
+                                        title="January 15, 2024 at 8:45 AM"
+                                        >45 minutes ago</time
+                                    >
+                                </li>
+                                <li>
+                                    Backup completed in
+                                    <time datetime="PT15M">15 minutes</time>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <!-- Contact and address information -->
+                        <article class="card">
+                            <header>
+                                <h3>Support Contact</h3>
+                            </header>
+                            <address>
+                                <p><strong>Technical Support</strong></p>
+                                <p>
+                                    Email:
+                                    <a href="mailto:support@example.com"
+                                        >support@example.com</a
+                                    >
+                                </p>
+                                <p>
+                                    Phone:
+                                    <a href="tel:+1-800-555-0123"
+                                        >1-800-555-0123</a
+                                    >
+                                </p>
+                                <p>Hours: Monday-Friday, 9 AM - 5 PM EST</p>
+                            </address>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Data table with advanced features -->
+                <section aria-labelledby="data-table-heading">
+                    <h2 id="data-table-heading">Performance Metrics</h2>
+
+                    <table>
+                        <caption>
+                            Monthly performance data for Q1 2024
+                        </caption>
+                        <colgroup>
+                            <col />
+                            <col span="3" style="background-color: #f8f9fa" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Metric</th>
+                                <th scope="col">January</th>
+                                <th scope="col">February</th>
+                                <th scope="col">March</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Page Views</th>
+                                <td>125,430</td>
+                                <td>134,567</td>
+                                <td>142,890</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Unique Visitors</th>
+                                <td>45,220</td>
+                                <td>48,930</td>
+                                <td>52,110</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Conversion Rate</th>
+                                <td>3.2%</td>
+                                <td>3.8%</td>
+                                <td>4.1%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Average Growth</th>
+                                <td colspan="3">+12.5% per month</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+        <!-- Sidebar with complementary information -->
+        <aside role="complementary" aria-labelledby="sidebar-heading">
+            <div class="container">
+                <h2 id="sidebar-heading">Quick Links</h2>
+                <nav aria-label="Quick actions">
+                    <ul>
+                        <li>
+                            <a href="/reports" download
+                                >Download Monthly Report</a
+                            >
+                        </li>
+                        <li><a href="/backup">Create Backup</a></li>
+                        <li><a href="/help">Help Documentation</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Live updates area -->
+                <section aria-live="polite" aria-label="Live updates">
+                    <h3>System Status</h3>
+                    <div id="status-updates">
+                        <p>All systems operational</p>
+                    </div>
+                </section>
+            </div>
+        </aside>
+
+        <!-- Footer with comprehensive information -->
+        <footer role="contentinfo">
+            <div class="container">
+                <p>&copy; 2024 Dashboard Inc. All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/accessibility">Accessibility Statement</a>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- Progressive enhancement scripts -->
+        <script>
+            // Feature detection and progressive enhancement
+            document.addEventListener("DOMContentLoaded", function () {
+                // Canvas chart if supported
+                const canvas = document.getElementById("chart-canvas");
+                if (canvas && canvas.getContext) {
+                    const ctx = canvas.getContext("2d");
+
+                    // Simple chart drawing
+                    ctx.fillStyle = "#007bff";
+                    ctx.fillRect(20, 150, 40, 30);
+                    ctx.fillRect(80, 120, 40, 60);
+                    ctx.fillRect(140, 100, 40, 80);
+                    ctx.fillRect(200, 80, 40, 100);
+
+                    // Chart labels
+                    ctx.fillStyle = "#333";
+                    ctx.font = "12px Arial";
+                    ctx.fillText("Jan", 25, 195);
+                    ctx.fillText("Feb", 85, 195);
+                    ctx.fillText("Mar", 145, 195);
+                    ctx.fillText("Apr", 205, 195);
+                }
+
+                // Range input output update
+                const rangeInput = document.getElementById("font-size");
+                const output = document.querySelector(
+                    'output[for="font-size"]'
+                );
+                if (rangeInput && output) {
+                    rangeInput.addEventListener("input", function () {
+                        output.textContent = this.value + "px";
+                        document.body.style.fontSize = this.value + "px";
+                    });
+                }
+
+                // Theme color picker
+                const colorPicker = document.getElementById("theme-color");
+                if (colorPicker) {
+                    colorPicker.addEventListener("change", function () {
+                        document.documentElement.style.setProperty(
+                            "--theme-color",
+                            this.value
+                        );
+                    });
+                }
+
+                // Live status updates simulation
+                const statusArea = document.getElementById("status-updates");
+                if (statusArea) {
+                    setInterval(function () {
+                        const now = new Date();
+                        statusArea.innerHTML = `<p>Last updated: ${now.toLocaleTimeString()}</p>`;
+                    }, 30000);
+                }
+
+                // Service worker registration for offline functionality
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker
+                        .register("/sw.js")
+                        .then(function (registration) {
+                            console.log(
+                                "ServiceWorker registration successful"
+                            );
+                        })
+                        .catch(function (err) {
+                            console.log("ServiceWorker registration failed");
+                        });
+                }
+            });
+
+            // Geolocation API example
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (
+                        position
+                    ) {
+                        console.log("Latitude: " + position.coords.latitude);
+                        console.log("Longitude: " + position.coords.longitude);
+                    });
+                }
+            }
+
+            // Web Storage example
+            function saveSettings() {
+                const settings = {
+                    theme: document.getElementById("theme-color").value,
+                    fontSize: document.getElementById("font-size").value,
+                    notifications:
+                        document.getElementById("notifications").checked,
+                };
+                localStorage.setItem(
+                    "dashboardSettings",
+                    JSON.stringify(settings)
+                );
+            }
+
+            // Load saved settings
+            function loadSettings() {
+                const saved = localStorage.getItem("dashboardSettings");
+                if (saved) {
+                    const settings = JSON.parse(saved);
+                    document.getElementById("theme-color").value =
+                        settings.theme;
+                    document.getElementById("font-size").value =
+                        settings.fontSize;
+                    document.getElementById("notifications").checked =
+                        settings.notifications;
+                }
+            }
+
+            // Initialize settings
+            loadSettings();
+        </script>
+    </body>
+</html>
